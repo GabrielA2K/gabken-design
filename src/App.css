@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 8rem;
+  width: 100%;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* background-color: rgba(255, 0, 0, 0.11); */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* backdrop-filter: blur(10px); */
+
+}
+nav .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -1rem;
+  /* background-color: #0f0f0f7e; */
+  backdrop-filter: blur(10px);
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1) 60%);
+}
+nav .container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  /* border: 1px solid red; */
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+nav .container .logo {
+  height: 100%;
+  width: 12rem;
+  background-image: url('./assets/gabken.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+main {
+  /* border: 1px solid red; */
+  min-height: 20rem;
+  width: 100%;
+  padding-top: 8rem;
+}
+
+main .side-float {
+  position: fixed;
+  width: 20rem;
+  bottom: 2rem;
+  top: 8rem;
+  background-color: #141414;
+  border-radius: 2rem;
+}
+
+main .contents {
+  margin-left: 22rem;
+  padding: 2rem;
+  background-color: #141414;
+  border-radius: 2rem;
+  min-height: 120vh;
+  margin-bottom: 2rem;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
